@@ -9,8 +9,9 @@ const displayPhones = (phones, dataLimit) => {
   console.log(phones);
   const phonesContainer = document.getElementById("phones-container");
   phonesContainer.textContent = "";
-  const showAll = document.getElementById("show-all");
+  
   // display 6 phones only
+  const showAll = document.getElementById("show-all");
   if (dataLimit && phones.length > 6) {
     phones = phones.slice(0, 6);
     showAll.classList.remove("d-none");
